@@ -1,0 +1,18 @@
+---
+title: WeightedOnlineStats.jl
+description: Statistics for big data with $\mathcal{O}(1)$ memory in pure Julia. An extension of OnlineStatsBase.jl that supports proper statistical weighting and arbitrary numerical precision.
+categories:
+  - Big Data
+  - Statistics
+  - Multivariate Statistics
+  - Julia
+date: "2017-04-03T00:00:00Z"
+# Optional external URL for project (replaces project detail page).
+link: https://github.com/gdkrmr/WeightedOnlineStats.jl
+image: "images/weightedonlinestats.png"
+---
+
+[{{< meta link >}}]({{< meta link >}})
+
+<a href="{{< meta link >}}"><img src="{{< meta image >}}" class="img-fluid" alt="{{< meta title >}}"></a>
+

@@ -1,0 +1,11 @@
+/* css styles */
+
+/* Navbar tools: Quarto only knows Bootstrap Icons, so render the cv and
+   orcid tools with Academicons glyphs (self-hosted in resources/academicons, loaded via css: in _quarto.yml). */
+.bi-cv::before,
+.bi-orcid::before {
+  font-family: "Academicons" !important;
+  font-weight: normal;
+}
+.bi-cv::before { content: "\e9a5"; }
+.bi-orcid::before { content: "\e9d9"; }

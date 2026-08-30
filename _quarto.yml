@@ -1,0 +1,65 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!TODO.md"
+  pre-render: uv run python -m gdkrmr_com.og_images
+  resources:
+    - CNAME
+    # - resources/documents/cv.pdf
+    - resources/academicons/fonts/*
+    - resources/fonts/*.woff2
+
+website:
+  title: "Guido Kraemer"
+  description: "Researcher at the Institute for Earth System Science and Remote Sensing, Leipzig University, working on machine learning, data cubes and development indicators."
+  favicon: resources/images/favicon.jpg
+  sidebar: false
+  reader-mode: true
+  llms-txt: true
+  open-graph: true
+  site-url: https://gdkrmr.com
+  navbar:
+    search: true
+    left:
+      - index.qmd
+      - publications.qmd
+      - software/index.qmd
+      - blog/index.qmd
+    tools:
+      - icon: github
+        href: https://github.com/gdkrmr/
+      - icon: bluesky
+        href: https://bsky.app/profile/gdkrmr.bsky.social
+      - icon: twitter
+        href: https://x.com/gdkrmr
+      - icon: linkedin
+        href: https://www.linkedin.com/in/guido-kraemer-88b5802a5/
+      # - icon: cv
+      #   href: resources/documents/cv.pdf
+      #   aria-label: CV
+      - icon: orcid
+        href: https://orcid.org/0000-0003-4865-5041
+        aria-label: ORCID
+  page-footer:
+    # The year is the build year; the inline script bumps it to the current
+    # year in the browser so the footer never goes stale between rebuilds.
+    left: 'Copyright <span id="footer-year">2026</span>, Guido Kraemer<script>document.getElementById("footer-year").textContent = new Date().getFullYear();</script>'
+    right:
+      - text: Impressum & Datenschutz
+        href: impressum.qmd
+
+format:
+  html:
+    theme:
+      light:
+        - theme.scss
+        - light.scss
+      dark:
+        - theme.scss
+        - dark.scss
+    css:
+      - styles.css
+      - resources/academicons/css/academicons.min.css
+      - resources/fonts/fonts.css

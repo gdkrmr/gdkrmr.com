@@ -1,0 +1,19 @@
+---
+title: MCP Git Course
+description: Learn git through LLMs
+categories:
+  - Teaching
+  - Git
+  - LLMs
+  - MCP
+date: "2026-01-22"
+link: https://github.com/gdkrmr/mcp-git-course
+image: "images/mcpgitcourse.png"
+---
+
+[{{< meta link >}}]({{< meta link >}})
+
+<a href="{{< meta link >}}"><img src="{{< meta image >}}" class="img-fluid" alt="{{< meta title >}}"></a>
+
+
+

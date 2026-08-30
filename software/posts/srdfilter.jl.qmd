@@ -1,0 +1,18 @@
+---
+title: SRDFilter.jl
+description: The modified sinc kernel smoother as an alternative to the Savitzky-Golay filter
+categories:
+  - Smoothing
+  - Interpolation
+  - SRDFilter
+  - Savitzky-Golay
+  - Finite Impulse Response Filter
+date: "2026-07-19"
+link: https://github.com/gdkrmr/SRDFilter.jl
+image: "images/srdfilter.jl.png"
+---
+[{{< meta link >}}]({{< meta link >}})
+
+<a href="{{< meta link >}}"><img src="{{< meta image >}}" class="img-fluid" alt="{{< meta title >}}"></a>
+
+

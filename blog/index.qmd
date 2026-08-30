@@ -1,0 +1,13 @@
+---
+title: "Blog"
+page-layout: full
+listing:
+  feed: true
+  contents: posts
+  categories: true
+  sort: "date desc"
+  type: table
+---
+
+::: {#sample-listings}
+:::

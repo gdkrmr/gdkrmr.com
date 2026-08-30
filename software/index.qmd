@@ -1,0 +1,18 @@
+---
+title: "Software"
+page-layout: full
+listing:
+  feed: true
+  contents: posts
+  categories: true
+  sort: "date desc"
+  type: grid
+  grid-columns: 2
+  fields: [title, categories, description, date]
+---
+
+Most of my code will be on Github [https://github.com/gdkrmr](https://github.com/gdkrmr).
+
+::: {#sample-listings}
+:::
+

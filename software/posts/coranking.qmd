@@ -1,0 +1,14 @@
+---
+title: coRanking
+description: Calculates the co-ranking matrix to assess the quality of a dimensionality reduction in R.
+categories:
+  - Dimensionality Reduction
+  - co-Ranking Matrix
+  - R
+date: "2020-08-18T00:00:00Z"
+link: https://github.com/gdkrmr/coRanking
+image: images/coranking.png
+---
+[{{< meta link >}}]({{< meta link >}})
+
+<a href="{{< meta link >}}"><img src="{{< meta image >}}" class="img-fluid" alt="{{< meta title >}}"></a>

@@ -1,0 +1,14 @@
+---
+title: DRR
+description: An Implementation of Dimensionality Reduction via Regression using Kernel Ridge Regression in R.
+categories:
+  - Dimensionality Reduction
+  - Dimensionality Reduction via Regression
+  - R
+date: "2017-04-03T00:00:00Z"
+link: https://github.com/gdkrmr/DRR
+image: images/drr.png
+---
+[{{< meta link >}}]({{< meta link >}})
+
+<a href="{{< meta link >}}"><img src="{{< meta image >}}" class="img-fluid" alt="{{< meta title >}}"></a>

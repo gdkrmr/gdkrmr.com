@@ -1,0 +1,14 @@
+---
+title: LevelDB.jl
+description: A LevelDB wrapper for Julia
+categories:
+  - LevelDB
+  - Bitcoin
+  - Julia
+date: "2017-04-03T00:00:00Z"
+link: https://github.com/gdkrmr/LevelDB.jl
+image: images/leveldb.jl.png
+---
+[{{< meta link >}}]({{< meta link >}})
+
+<a href="{{< meta link >}}"><img src="{{< meta image >}}" class="img-fluid" alt="{{< meta title >}}"></a>

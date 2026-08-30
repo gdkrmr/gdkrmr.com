@@ -1,0 +1,9 @@
+.quarto
+*.quarto_ipynb
+_site
+__pycache__
+
+
+/.quarto/
+**/*.quarto_ipynb
+.auctex-auto

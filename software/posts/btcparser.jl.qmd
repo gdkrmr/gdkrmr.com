@@ -1,0 +1,15 @@
+---
+title: BTCParser.jl
+description: A pure Julia implementation of a Bitcoin blockchain parser.
+categories:
+  - Bitcoin
+  - Blockchain
+  - Julia
+date: "2017-04-03T00:00:00Z"
+link: https://github.com/gdkrmr/BTCParser.jl
+image: "images/btcparser.jl.png"
+---
+[{{< meta link >}}]({{< meta link >}})
+
+<a href="{{< meta link >}}"><img src="{{< meta image >}}" class="img-fluid" alt="{{< meta title >}}"></a>
+

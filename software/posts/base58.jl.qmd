@@ -1,0 +1,15 @@
+---
+title: Base58.jl
+description: "Pure Julia implementation of Base58 encoding."
+categories:
+  - Encoding
+  - Base58
+  - Bitcoin
+  - Julia
+date: "2017-04-03T00:00:00Z"
+link: "https://github.com/gdkrmr/Base58.jl"
+image: "images/base58.jl.png"
+---
+[{{< meta link >}}]({{< meta link >}})
+
+<a href="{{< meta link >}}"><img src="{{< meta image >}}" class="img-fluid" alt="{{< meta title >}}"></a>

@@ -1,0 +1,60 @@
+---
+title: "Home"
+pagetitle: "Guido Kraemer"
+description: "Researcher at the Institute for Earth System Science and Remote Sensing, Leipzig University, working on machine learning, data cubes and development indicators."
+---
+
+::::: {.grid .home}
+
+:::: {.g-col-12 .g-col-md-4 .home-aside}
+
+![](resources/images/avatar.jpg){.avatar fig-alt="Portrait of Guido Kraemer"}
+
+::: {.eyebrow}
+Affiliations
+:::
+
+- [Institute for Earth System Science and Remote Sensing, Leipzig University](https://physes.uni-leipzig.de/ief)
+- [Remote Sensing Center for Earth System Research](https://rsc4earth.de)
+
+::: {.eyebrow}
+Elsewhere
+:::
+
+- [ORCID](https://orcid.org/0000-0003-4865-5041)
+- [GitHub](https://github.com/gdkrmr/)
+- [CV (PDF)](resources/documents/cv.pdf)
+
+::::
+
+:::: {.g-col-12 .g-col-md-8}
+
+# Guido Kraemer {.unlisted .unnumbered}
+
+::: {.lede}
+Researcher at the Institute for Earth System Science and Remote Sensing, Leipzig University, working on machine learning, data cubes and development indicators.
+:::
+
+## Interests {.eyebrow}
+
+::: {.inline-list}
+- Biosphere society interactions
+- Machine Learning
+- Data Cubes
+- Indicators
+- LLMs
+- Teaching responsible use of LLMs
+:::
+
+## Education {.eyebrow}
+
+::: {.cv}
+- [2020]{.year} PhD in Remote Sensing, Valencia University / Max Planck Institute for Biogeochemistry, Jena
+- [2015]{.year} MSc Ecology, Evolution, and Systematics, Jena University
+- [2013]{.year} Ing Tropical Rainforest Ecology, Universidad Nacional de la Amazonía Peruana, Iquitos
+- [2012]{.year} BSc Tropical Rainforest Ecology, Universidad Nacional de la Amazonía Peruana, Iquitos
+:::
+
+::::
+
+:::::

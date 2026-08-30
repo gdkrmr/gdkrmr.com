@@ -1,0 +1,36 @@
+---
+title: DimRed
+description: A framework for dimensionality reduction in R
+categories:
+  - Dimensionality Reduction
+  - R
+date: "2020-08-19T00:00:00Z"
+link: "https://github.com/gdkrmr/dimRed"
+image: "images/dimred.png"
+---
+
+[{{< meta link >}}]({{< meta link >}})
+
+<a href="{{< meta link >}}"><img src="{{< meta image >}}" class="img-fluid" alt="{{< meta title >}}"></a>
+
+A collection of dimensionality reduction methods in R and a common interface.
+- Documentation: https://doi.org/10.32614/RJ-2018-039
+- Github: https://github.com/gdkrmr/dimRed
+- Issues: https://github.com/gdkrmr/dimRed/issues
+- CRAN: https://cran.r-project.org/package=dimRed
+- Citation: 
+```
+@article{kraemer_dimred_2018,
+ author = {Kraemer, Guido and Reichstein, Markus and Mahecha, Miguel D.},
+ issn = {2073-4859},
+ journal = {The R Journal},
+ language = {en},
+ number = {1},
+ pages = {342--358},
+ title = {dimRed and coRanking - Unifying Dimensionality Reduction in R},
+ url = {https://doi.org/10.32614/RJ-2018-039},
+ volume = {10},
+ year = {2018},
+}
+```
+

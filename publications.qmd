@@ -1,0 +1,9 @@
+---
+title: "Publications"
+bibliography: resources/documents/publications.bib
+csl: resources/documents/chicago-author-date-newest-first.csl
+nocite: |
+  @*
+---
+::: {#refs}
+:::
