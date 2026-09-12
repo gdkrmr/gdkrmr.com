@@ -1,11 +1,7 @@
 # TODO before going live
 
-## Blockers
+## Important
 
-- [ ] Replace `resources/documents/cv.pdf`: the current file contains home
-      address, mobile number and date of birth in plain text, undoing the
-      obfuscation on the Impressum. It is also from June 2023 and still names
-      the Institute for Geology and Geophysics. NOTE: remove CV for now.
 - [x] Set up deployment: this repo has no git remote and no GitHub Actions
       workflow (`CNAME` file is in place). The Datenschutzerklärung promises GitHub
       Pages hosting.
@@ -16,6 +12,19 @@
       `gdkrmr/gdkrmr.github.io`. Either replace it there or redirect the old
       domain; old URLs (`/publication/…`, `/software/…`, `/post/…`) will
       otherwise go dead.
+- [ ] DNS works but is currently misconfigured:
+      1. Delete the CNAME record for @.
+      2. Add four A records for @:
+        - 185.199.108.153
+        - 185.199.109.153
+        - 185.199.110.153
+        - 185.199.111.153
+      3. Add four AAAA records for @:
+        - 2606:50c0:8000::153
+        - 2606:50c0:8001::153
+        - 2606:50c0:8002::153
+        - 2606:50c0:8003::153
+      4. Remove any URL redirect record for www and add a CNAME record www pointing to gdkrmr.github.io.
 
 ## Should fix before launch
 
@@ -45,3 +54,7 @@
 - [x] Blacklist TODO.qmd
 - [x] rename "Projects" -> "Software"
 - [ ] some references are contain curly braces in the rendering
+- [ ] Replace `resources/documents/cv.pdf`: the current file contains home
+      address, mobile number and date of birth in plain text, undoing the
+      obfuscation on the Impressum. It is also from June 2023 and still names
+      the Institute for Geology and Geophysics. NOTE: remove CV for now.
