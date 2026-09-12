@@ -1,8 +1,8 @@
 """Pre-render hook: fill in missing project images from Open Graph metadata.
 
-For every post in projects/posts/ that has a `link:` in its front matter but
+For every post in software/posts/ that has a `link:` in its front matter but
 no `image:` (or an `image:` pointing to a file that does not exist), fetch the
-linked page, read its og:image, download the image to projects/posts/images/
+linked page, read its og:image, download the image to software/posts/images/
 and set the `image:` entry in the post's front matter.
 
 Images already on disk are not re-downloaded, so the network is only hit for
@@ -18,7 +18,7 @@ import requests
 import yaml
 from bs4 import BeautifulSoup
 
-POSTS_DIR = Path("projects/posts")
+POSTS_DIR = Path("software/posts")
 IMAGES_DIR = POSTS_DIR / "images"
 
 EXTENSIONS = {

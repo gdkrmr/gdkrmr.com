@@ -6,7 +6,7 @@
       address, mobile number and date of birth in plain text, undoing the
       obfuscation on the Impressum. It is also from June 2023 and still names
       the Institute for Geology and Geophysics. NOTE: remove CV for now.
-- [ ] Set up deployment: this repo has no git remote and no GitHub Actions
+- [x] Set up deployment: this repo has no git remote and no GitHub Actions
       workflow (`CNAME` file is in place). The Datenschutzerklärung promises GitHub
       Pages hosting.
 - [x] Connect the domain: `gdkrmr.com` currently resolves to a Namecheap
@@ -28,7 +28,7 @@
       date to the actual launch date.
 - [x] Twitter: the navbar links to twitter.com and the Impressum mentions X.
       Keep both or drop both.
-- [ ] Deploy workflow must install `uv` for the `og_images` pre-render hook and
+- [x] Deploy workflow must install `uv` for the `og_images` pre-render hook and
       tolerate fetch failures (the hook hits the network).
 
 ## Polish
