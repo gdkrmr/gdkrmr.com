@@ -32,7 +32,7 @@
 - [x] Add a favicon in `_quarto.yml`.
 - [x] Add `website.description` and a default social image so link previews
       show more than the title.
-- [ ] Rewrite the launch blog post (`blog/posts/2026_09_03_new_website.qmd`):
+- [x] Rewrite the launch blog post (`blog/posts/2026_09_12_new_website.qmd`):
       fix "I switched to build system from Hugo Academic to Quarto" and set the
       date to the actual launch date.
 - [x] Twitter: the navbar links to twitter.com and the Impressum mentions X.

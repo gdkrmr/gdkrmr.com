@@ -1,0 +1,19 @@
+---
+title: New website
+description: "gdkrmr.com is live, rebuilt with Quarto."
+categories:
+  - Blog
+  - Announcement
+  - Website
+date: "2026-09-12"
+author: Guido Kraemer
+---
+
+Welcome to my new website at [gdkrmr.com](https://gdkrmr.com).
+
+The old site ran on Hugo with the Academic theme. I have rebuilt the site from scratch with [Quarto](https://quarto.org).
+
+- Hugo academic is not supported any more.
+- Simpler workflow, especially publication management.
+- I use Quarto for many other projects.
+
