@@ -9,7 +9,7 @@
 - [ ] Set up deployment: this repo has no git remote and no GitHub Actions
       workflow (`CNAME` file is in place). The Datenschutzerklärung promises GitHub
       Pages hosting.
-- [ ] Connect the domain: `gdkrmr.com` currently resolves to a Namecheap
+- [x] Connect the domain: `gdkrmr.com` currently resolves to a Namecheap
       parking page. Add DNS records for GitHub Pages and enforce HTTPS once the certificate is issued.
 - [ ] Decide what happens to the old site: `www.guido-kraemer.com` still serves
       the Hugo Academic site from the `master` branch of
