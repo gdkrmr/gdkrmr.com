@@ -44,3 +44,4 @@
 - [x] Take publications from CV, there is a cleaned up bib file.
 - [x] Blacklist TODO.qmd
 - [x] rename "Projects" -> "Software"
+- [ ] some references are contain curly braces in the rendering
