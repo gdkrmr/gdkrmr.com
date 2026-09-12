@@ -41,6 +41,6 @@
       `jupyter` dependency.
 - [x] Footer year is hard-coded to 2026 in `_quarto.yml` (now bumped to the
       current year by an inline script; the build year stays as fallback).
-- [ ] Take publications from CV, there is a cleaned up bib file.
+- [x] Take publications from CV, there is a cleaned up bib file.
 - [x] Blacklist TODO.qmd
 - [x] rename "Projects" -> "Software"
