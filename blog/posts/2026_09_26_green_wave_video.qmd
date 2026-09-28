@@ -1,0 +1,79 @@
+---
+title: Opus 5.5 is really good at science communication
+description: How I created an animated video with AI and real data.
+categories:
+  - GreenWave
+  - ClimateChange
+  - Phenology
+  - EarthObservation
+  - RemoteSensing
+  - ScienceCommunication
+  - DataVisualization
+date: "2026-09-28"
+author: Guido Kraemer
+---
+
+{{< video https://youtu.be/FGW0RHVdUuk >}}
+
+After the release of Opus 5.5 the internet figured out that it is really good at producing complete animated films for a few dollars of API calls ([1](https://www.reddit.com/r/ClaudeAI/comments/1wovwao/jaw_literally_dropped_i_ran_the_prompt_from_the/), [2](https://www.reddit.com/r/ClaudeAI/comments/1wogab3/made_entirely_with_opus_55_321_of_openrouter_api/)). I wanted to see how good it is at science communication, especially whether it could add real data to the animation.
+
+I gave Claude Code the following prompt and went off to do chores around the house:
+
+> Create a pure javascript animation. 30s–60s whimsical hand drawn collage style with appropriate audio on the topic
+> what is the "Global Green Wave"? [...] Quality is paramount. Production value should be on professional level. [...]
+> max OpenRouter spend is $10. Make it reusable, keep assets and script separately.
+
+I also pointed it at our PNAS paper ([Mahecha et al. 2026](https://doi.org/10.1073/pnas.2515835123)), the paper's code
+repository, and 3.5 GB of GIMMS LAI4g leaf-area data on my disk.
+
+After 2–3 hours, there was a one-minute film. It has narration, music, sound effects and captions. The total API bill was $2.50 and around 10% of Claude's session limit.
+
+There were some minor issues:
+
+- Leaves did not match the regions they appeared in (e.g., eucalyptus in Africa).
+- The video equated "spring" with spring in the northern hemisphere.
+- For some reason it used a bee to represent the barycenter, probably because it was trained on too many children's books.
+- The sun needed some tweaking.
+- Some intonation and pauses needed tweaking.
+
+I asked it to switch the bee for a green ghost and to correct the other issues. Each change took under 10 minutes.
+
+In the end, I'm really impressed by how simple and cheap this was, especially how easy it was to get real data into the animation.
+
+Claude's self-report of what was used to make the film and the steps it had to take to get there:
+
+> Claude Opus 5.5 did the script, animation code and pipeline. Gemini TTS did the voice,
+> Lyria 3 the music and Gemini Image the collage art. Science: Mahecha et al. (2026), PNAS. Data: GIMMS LAI4g.
+>
+> ### What it actually did
+> 
+> The session log reads like a small production studio:
+> 
+> 1. **Research.** It read the paper and the project website. It found the paper's own centroid-trajectory output in the
+>    repository and worked out what that data implies. On the ground, the green wave's "balance point" swings from about
+>    66°N off Norway in July to about 4°N off West Africa in February.
+> 2. **Real data, not stock imagery.** It computed a 24-frame mean seasonal cycle from the raw GIMMS LAI4g zarr (1982–2020).
+>    Every globe and map in the film is painted from that data at render time, posterised into paper-cut colour bands.
+>    The little green ghost that stands in for the barycentre flies the paper's actual trajectory. The "drift" scene
+>    plots one dot per year for 39 years. As a sanity check, it reproduced the published trends
+>    (≈2 km/yr northward) from the trajectory before using it.
+> 3. **Voice.** It wrote a 12-line script and synthesised nine candidate narrators across several text-to-speech models.
+>    Since it cannot listen, it sent the clips to an audio-capable model for a blind critique. The Gemini TTS voice *Sulafat*
+>    won. Lines flagged for a warble or a clipped "north" were regenerated and re-checked.
+> 4. **Music.** It generated three Lyria takes and picked one. Rather than time-stretching, it beat-tracked the track and cut
+>    exactly eight beats inside a natural musical pause. That places the musical "breath" on the word *surprise* and the
+>    final chord under the URL on the end card.
+> 5. **Art.** It generated paper-collage cutouts (sun, satellite, clouds, farmland with a tiny tractor, the ghost) and removed
+>    their backgrounds. When I later asked for leaves native to where they appear, it generated six regional leaf sets
+>    (mopane and baobab for Africa, eucalyptus for Australia, ginkgo for China, sugar maple for North America, …). It also wrote
+>    a small latitude/longitude rule so that no ginkgo ever lands in Africa.
+> 6. **Animation.** It wrote about 1,500 lines of dependency-free Canvas code: an orthographic globe renderer, torn-paper
+>    wipes, pencil lines that "boil" at 12 fps like stop-motion, and handwritten text. Every visual beat is anchored to a
+>    word timestamp from the narration, so re-recording a line re-times the film.
+> 7. **Review loops.** It rendered frames headlessly and inspected contact sheets itself. It also sent low-res proxies of
+>    the full film to a video-capable model for director-style critiques, and went through five rounds of fixes.
+>    Tellingly, it did not follow the critic blindly. Twice the reviewer claimed a "factual error" (India in the wrong
+>    place, the February drift pointing south). Both times it checked the claim against the data, found a misreading,
+>    and instead added map pins and compass letters so nobody else would misread it.
+
+
