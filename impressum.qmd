@@ -92,6 +92,8 @@ Sie haben gegenüber mir folgende Rechte hinsichtlich der Sie betreffenden perso
 - Recht auf Datenübertragbarkeit (Art. 20 DSGVO),
 - Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO).
 
+Ich selbst speichere personenbezogene Daten nur, wenn Sie mir eine E-Mail schreiben. Für die Server-Logs von GitHub können Sie Ihre Rechte auch direkt gegenüber GitHub geltend machen.
+
 Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten zu beschweren. Für mich zuständig ist die Sächsische Datenschutz- und Transparenzbeauftragte, Devrientstraße 5, 01067 Dresden, [www.datenschutz.sachsen.de](https://www.datenschutz.sachsen.de).
 
-*Stand: September 2026*
+*Stand: Oktober 2026*
