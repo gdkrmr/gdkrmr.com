@@ -1,0 +1,45 @@
+---
+title: Ever wondered what happens inside GPT?
+description: A logit lens in the browser shows how a language model arrives at its next word, layer by layer.
+categories:
+  - MachineLearning
+  - LanguageModels
+  - Interpretability
+  - ScienceCommunication
+  - DataVisualization
+date: "2026-10-18"
+author: Guido Kraemer
+draft: true
+---
+
+Chatbots like ChatGPT answer one token at a time. A token is a word or part of a word. For every token, the model passes your text through a stack of layers, and only the last one produces the answer. What happens in between is usually invisible.
+
+There is a simple trick to look inside, called the logit lens: take the intermediate result of every layer and ask "if the model stopped here, what would it say next?" I built a small website that does this for you, with a real model and prompt running in your browser: [logitlens.gdkrmr.com](https://logitlens.gdkrmr.com). For a full explanation of how it works, check out the blog post on [lesswrong.com](https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens).
+
+![The lens moves up through the layers of the model and shows its top guesses for the next token at each one.](/resources/images/logitlens-simple.png)
+
+## Watch the answer form
+
+Pick a model, type a prompt or pick one of the examples, and press "Run".
+Then watch how the model's guess for the next token changes layer by layer.
+There is also a small curve that shows how far each layer still is from the final answer, and a caption explains what is going on.
+
+Take "The Eiffel Tower is located in the city of" on SmolLM2:
+
+![The rank of "Paris" among SmolLM2's guesses after "…city of", layer by layer: it jumps from several thousand to first place in the last few layers.](/resources/images/logitlens-paris-rank.png)
+
+## The whole picture: the advanced view
+
+The animation follows only the last token of the prompt. The "Advanced view" link at the top shows all of them at once, as a heatmap.
+
+![What Qwen3.5 0.8B thinks after each token (left to right) of "The Eiffel Tower is located in the city of", from the first layer (bottom) to the last (top). Darker means that the model is more sure. The amber line means that the model reached its final guess.](/resources/images/logitlens-heatmap.png)
+
+## It is not actually ChatGPT
+
+ChatGPT's weights are not public, so nobody outside OpenAI can look inside it. The website uses small open models built on the same technology (transformers), such as Qwen and SmolLM2. They have between a hundred million and a few billion parameters. ChatGPT is much larger, but it works on the same principle.
+
+## Everything runs on your computer
+
+There is no server doing the work. The website downloads a model once and keeps it in your browser. You can even import your own local model as a GGUF file. Your prompts never leave your computer. Under the hood it uses [llama.cpp](https://github.com/ggml-org/llama.cpp), compiled to WebAssembly via [wllama](https://github.com/ngxson/wllama), with an extension that reads out every layer during a single pass through the model.
+
+The code is on [GitHub](https://github.com/gdkrmr/logitlens).
