@@ -9,7 +9,6 @@ categories:
   - DataVisualization
 date: "2026-10-18"
 author: Guido Kraemer
-draft: true
 ---
 
 Chatbots like ChatGPT answer one token at a time. A token is a word or part of a word. For every token, the model passes your text through a stack of layers, and only the last one produces the answer. What happens in between is usually invisible.
